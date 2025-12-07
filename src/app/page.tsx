@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 import { profile, education, experience, navigation, highlightColors } from "@/content/data";
-import { HighlightedText } from "@/lib/utils";
+import { HighlightedText, HighlightedTextWhite } from "@/lib/utils";
 
 export default function Home() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -112,10 +112,12 @@ export default function Home() {
                 </a>
                 <span className="text-foreground-muted text-sm">•</span>
                 <a
-                  href={`mailto:${profile.email}`}
+                  href={profile.cv}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-foreground-muted hover:text-foreground underline transition-colors"
                 >
-                  {profile.email}
+                  Link to CV
                 </a>
               </div>
 
@@ -124,15 +126,24 @@ export default function Home() {
                 <h2 className="text-xl font-semibold text-foreground mb-4 underline">
                   Education
                 </h2>
-                <div className="space-y-2">
+                <div className="space-y-3">
                   {education.map((edu, index) => (
-                    <p key={index} className="text-sm">
-                      <span className="font-medium">{edu.institution}</span>
-                      <span className="text-foreground-muted">
-                        {" : "}
-                        {edu.degree} · {edu.score} · {edu.period}
-                      </span>
-                    </p>
+                    <div key={index} className="text-base">
+                      <div className="flex items-baseline justify-between gap-4 mb-1">
+                        <span className="font-medium">{edu.institution}</span>
+                        <span className="text-foreground-muted whitespace-nowrap">
+                          {edu.period}
+                        </span>
+                      </div>
+                      <div className="text-foreground-muted pl-0">
+                        <div>{edu.degree}</div>
+                        {edu.focusArea && (
+                          <div>
+                            (with Focus Area in {edu.focusArea})
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -150,8 +161,8 @@ export default function Home() {
                     {/* Header */}
                     <div className="flex items-baseline justify-between gap-4 mb-1">
                       <h3 className="font-medium">
-                        <span className={highlightColors[job.color]}>{job.company}</span>
-                        <span className="text-foreground-muted font-normal">
+                        <span className={highlightColors[job.color]}>
+                          {job.company}
                           {" : "}
                           {job.role}
                         </span>
@@ -161,10 +172,10 @@ export default function Home() {
                       </span>
                     </div>
 
-                    {/* Description */}
-                    <p className="text-sm text-foreground-muted leading-relaxed">
-                      <HighlightedText text={job.description} />
-                    </p>
+                      {/* Description */}
+                      <p className="text-sm text-foreground-muted leading-relaxed">
+                        <HighlightedTextWhite text={job.description} />
+                      </p>
                   </div>
                 ))}
               </div>

@@ -10,21 +10,23 @@
 // =============================================================================
 
 export const profile = {
-  name: "Aakash Mallik",
+  name: "Violina Doley",
   title: "Software Developer",
-  subtitle: "AI Engineer",
-  email: "aakashmallik7777@gmail.com",
+  subtitle: "AI Researcher",
+  email: "violinadoley24@gmail.com",
   location: "India",
 
   social: {
-    github: "https://github.com/mallikaakash",
-    linkedin: "https://linkedin.com/in/aakash-mallik-82b99423b/",
+    github: "https://github.com/violinadoley",
+    linkedin: "https://linkedin.com/in/violina-doley",
   },
+
+  cv: "https://example.com/cv.pdf", // Add your CV/resume link here
 
   // Short bio for the homepage - use {highlight} syntax for colored spans
   bio: [
-    "I build {intelligent systems|orange} at the intersection of AI and software engineering. Currently at {Wells Fargo|blue}, working on Debt Capital Market platforms.",
-    "Previously shipped {RAG pipelines|purple} at NeoSapien (reduced latency by 46.5%), built speech-to-text infrastructure at OnTheRecord, and won {SUI Overflow 2025|pink} globally.",
+    "I build {intelligent systems|orange} at the intersection of AI research and software engineering. Currently working as a {Data Scientist|blue} at {IBM|blue}, focusing on automating large-scale data systems.",
+    "I actively participate in {hackathons|pink} and enjoy rapid prototyping and problem-solving. Open to collaborating on {impactful and research-driven work|purple}.",
   ],
 };
 
@@ -52,26 +54,16 @@ export interface EducationItem {
   degree: string;
   score: string;
   period: string;
+  focusArea?: string;
 }
 
 export const education: EducationItem[] = [
   {
-    institution: "NIT Karnataka, Surathkal",
-    degree: "B.Tech EEE, Minor in CS",
-    score: "8.07 CGPA",
-    period: "2021–25",
-  },
-  {
-    institution: "National Public School, Rajajinagar",
-    degree: "CBSE Class XII",
-    score: "97.6%",
-    period: "2021",
-  },
-  {
-    institution: "Presidency School, Nandini Layout",
-    degree: "ICSE Class X",
-    score: "98.88% · AIR 5",
-    period: "2019",
+    institution: "National Institute of Technology Karnataka, Surathkal",
+    degree: "B.Tech in Computer Science and Engineering",
+    score: "",
+    period: "2021 - 2025",
+    focusArea: "Artificial Intelligence and Machine Learning",
   },
 ];
 
@@ -90,44 +82,44 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Wells Fargo",
-    role: "SDE",
+    company: "IBM",
+    role: "Data Scientist",
     period: "Aug 2025 - Present",
-    color: "blue",
-    description:
-      "Working in the {Corporate Investment Banking|blue} team, building the Orderbook platform that supports Debt Capital Market deals. Primarily focusing on {ReactJs frontend|green} development and resolving high-priority security vulnerabilities.",
-  },
-  {
-    company: "Attenomics Lab",
-    role: "ML Engineer (Contract)",
-    period: "Apr 2025-Jun 2025",
-    color: "green",
-    description:
-      "Built a custom {Machine Learning pipeline|green} to semantically score periodically scraped Tweets. Developed a {hybrid RAG system|purple} with multi-tiered retrieval strategy for the online Chain of Thought reasoning chatbot.",
-  },
-  {
-    company: "NeoSapien",
-    role: "AI Developer Intern",
-    period: "Aug 2024-Mar 2025",
-    color: "purple",
-    description:
-      "Implemented the {Second Brain pipeline|purple} using RAG, Self-discover, and Chain-of-Thought paradigms. Deployed retrieval and storage systems with {Firestore & Qdrant|blue}, reducing response latency by {46.5%|orange}.",
-  },
-  {
-    company: "OnTheRecord Technology",
-    role: "ML Engineer (Contract)",
-    period: "Nov 2024-Jan 2025",
     color: "orange",
     description:
-      "Worked on {BlueCat|orange}, a desktop application for legal proceedings transcription in courts. As a founding engineer, focused on {speech-to-text model|green} infrastructure and coding frontend components.",
+      "Part of the {data warehousing team|orange}, working on {automating the query translation process|blue} to enable seamless data access across different systems.",
   },
   {
-    company: "Wells Fargo",
-    role: "SDE Intern",
-    period: "May 2024-Jul 2024",
-    color: "yellow",
+    company: "Siemens",
+    role: "AI Intern",
+    period: "Jan 2025 - Mar 2025",
+    color: "blue",
     description:
-      "Delivered {RPA solutions|yellow} for the Process Transformation team. Built a full-stack application for algorithmic skill-based task-employee matching, reducing task allotment time by {98.75%|pink}.",
+      "Developed a {GNN-based framework|blue} for adaptive mesh simulations, enabling efficient and accurate simulations of complex physical systems. Enhanced simulation accuracy and scalability across domains such as {fluid dynamics|green} and {structural mechanics|purple}.",
+  },
+  {
+    company: "SuperKalam (YC W23)",
+    role: "AI Research Intern",
+    period: "Aug 2024 - Sep 2024",
+    color: "green",
+    description:
+      "Worked on {LLM finetuning|green} with parameter optimization and {RLHF|purple} for UPSC-specific improvements. Developed {Advanced Prompt Engineering|orange} for evaluating answers across 10+ competitive subjects, creating {LLM-as-a-Judge templates|blue} for automated grading.",
+  },
+  {
+    company: "IBM",
+    role: "Data and AI Intern",
+    period: "May 2024 - Jul 2024",
+    color: "purple",
+    description:
+      "Designed a {RAG chatbot|purple} for sales professionals using Langchain and OpenAI API to streamline order booking, product recommendations, and sales pitch generation. Integrated {PDF and SQL|blue} for real-time customer-specific insights with seamless interaction via {WhatsApp|green}.",
+  },
+  {
+    company: "IIT Hyderabad",
+    role: "Machine Learning Research Internship",
+    period: "Dec 2023 - Feb 2024",
+    color: "blue",
+    description:
+      "Implemented {VirConv-L and VirConv-T models|blue} on the KITTI dataset, extending the architecture with {Squeeze-and-Excitation (S&E)|green} and {Pointwise Spatial Attention blocks|purple}, achieving a {2% improvement|orange} in 3D Average Precision (AP) for VirConv-L, enhancing autonomous driving model performance.",
   },
 ];
 
@@ -153,19 +145,14 @@ export const highlights: HighlightItem[] = [
     color: "blue",
   },
   {
-    title: "KVPY SX 2021",
-    description: "All India Rank 1373 out of 0.6 Million candidates in the Kishore Vaigyanik Protsahan Yogna examination.",
-    color: "green",
-  },
-  {
-    title: "ICSE Class X 2019",
-    description: "All India Rank 5 with 98.88% aggregate score in the Indian Council of Secondary Education examination.",
-    color: "orange",
-  },
-  {
-    title: "ASSET Aptitude Exam 2016",
-    description: "Achieved All India Rank 1 in the national aptitude examination.",
+    title: "KukuFM Project K Competition 2025",
+    description: "First Runner-up. Built an AI storytelling assistant.",
     color: "purple",
+  },
+  {
+    title: "The Great Bangalore Hackathon 2025",
+    description: "Top 27 teams out of 150 semifinalists, selected from over 4800+ applicants Pan-India.",
+    color: "green",
   },
 ];
 
@@ -185,23 +172,31 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
-    name: "KathaAI",
+    name: "WalGraph",
     description:
-      "Developed an iterative context solution to increase context length and preserve intent for writing long-form novels based on author specifications.",
-    tech: ["Next.js", "React", "MapBox", "Gemini", "SarvamAI"],
-    github: "https://github.com/mallikaakash/TGBH-StackedPitha",
-    period: "Mar 2025",
-    color: "purple",
-    achievement: "First Runner Up at KukuFm National Project K hackathon (150+ teams)",
+      "Built a scalable {decentralized graph database|blue} using {SUI blockchain|green} and {Walrus protocol|purple} for decentralized storage. Implemented {Cypher-like query engine|orange} and an interactive {D3.js interface|pink} for visualization, querying, and analytics.",
+    tech: ["Next.js", "TypeScript", "SUI Blockchain", "Move", "Walrus Protocol"],
+    github: "https://github.com/violinadoley/WalGraph",
+    period: "Mar – July 2025",
+    color: "blue",
   },
   {
-    name: "Great Bangalore Hackathon 2025",
+    name: "Smart Ride Matching with Demand Prediction",
     description:
-      "Built a novel solution to improve driver-customer matching and reduce cancellations with a dynamic pricing system. Deployed a masked autoencoder model to predict customer requests and proactively guide drivers to hotspots.",
-    tech: ["Next.js", "MapBox", "Gemini"],
+      "Developed a novel solution to improve {driver-customer matching|green} to reduce cancellation, along with {dynamic-pricing system|blue}. Deployed a {masked autoencoder|purple} to predict customer requests and guide drivers to {hotspots|orange} via an interactive map.",
+    tech: ["NextJs", "ReactJs", "MapBox", "Gemini", "SarvamAI"],
     github: "https://github.com/mallikaakash/TGBH-StackedPitha",
     period: "Mar 2025",
     color: "green",
+  },
+  {
+    name: "KathaAI",
+    description:
+      "Built an {AI-powered storytelling assistant|purple} that generates {personalized stories|blue} based on user preferences. Enabled {chapter-wise generation|green} with {real-time feedback|orange}, and export to PDF with custom covers and {audiobooks|pink}.",
+    tech: ["NextJs", "ReactJs", "MapBox", "Gemini", "SarvamAI"],
+    github: "https://github.com/mallikaakash/TGBH-StackedPitha",
+    period: "Apr 2025",
+    color: "purple",
   },
 ];
 
@@ -219,10 +214,10 @@ export interface PublicationItem {
 
 export const publications: PublicationItem[] = [
   {
-    title: "QGAPHnet: QGA Based Hybrid QLSTM Model for Soil Moisture Estimation",
-    venue: "IEEE IGARSS 2024, Athens",
-    year: "2024",
-    link: "https://ieeexplore.ieee.org/document/10641651",
+    title: "Improving Dynamic TDMA for Wireless Sensor Networks",
+    venue: "14th ICCCNT IEEE Conference, Indian Institute of Technology Delhi",
+    year: "2023",
+    link: "http://14icccnt.com/program-schedule.php",
     color: "blue",
   },
 ];

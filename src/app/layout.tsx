@@ -17,17 +17,17 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Aakash Mallik | Software Developer",
+  title: "Violina Doley Portfolio",
   description:
-    "Software Developer and AI Engineer building intelligent systems at the intersection of AI and software engineering.",
+    "Software Developer and ML Researcher building intelligent systems at the intersection of AI and machine learning.",
   keywords: [
-    "Aakash Mallik",
+    "Violina Doley",
     "Software Developer",
-    "AI Engineer",
+    "ML Researcher",
     "Machine Learning",
-    "Full Stack Developer",
+    "AI Engineer",
   ],
-  authors: [{ name: "Aakash Mallik" }],
+  authors: [{ name: "Violina Doley" }],
 };
 
 export default function RootLayout({

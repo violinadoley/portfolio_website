@@ -13,6 +13,7 @@ import {
   publications,
   highlightColors,
 } from "@/content/data";
+import { HighlightedTextWhite } from "@/lib/utils";
 
 export default function WorkPage() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -113,7 +114,7 @@ export default function WorkPage() {
 
                     {/* Description */}
                     <p className="text-xs sm:text-sm text-foreground-muted leading-relaxed">
-                      {project.description}
+                      <HighlightedTextWhite text={project.description} />
                     </p>
 
                     {/* Achievement */}
