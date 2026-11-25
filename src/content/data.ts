@@ -13,19 +13,19 @@ export const profile = {
   name: "Violina Doley",
   title: "Software Developer",
   subtitle: "AI Researcher",
-  email: "violinadoley24@gmail.com",
+  email: "violina.doley2025@gmail.com",
   location: "India",
 
   social: {
     github: "https://github.com/violinadoley",
-    linkedin: "https://linkedin.com/in/violina-doley",
+    linkedin: "https://www.linkedin.com/in/violinadoley/",
   },
 
   cv: "https://example.com/cv.pdf", // Add your CV/resume link here
 
   // Short bio for the homepage - use {highlight} syntax for colored spans
   bio: [
-    "I build {intelligent systems|orange} at the intersection of AI research and software engineering. Currently working as a {Forward Deployed Engineer|blue} at {Eightfold AI|blue}, partnering with enterprise customers to deploy AI-powered talent solutions.",
+    "I build {intelligent systems|orange} at the intersection of AI research and software engineering. Currently working as a {Product Solutions Engineer|blue} at {Eightfold AI|blue}, partnering with enterprise customers to deploy AI-powered talent solutions.",
     "I actively participate in {hackathons|pink} and enjoy rapid prototyping and problem-solving. Open to collaborating on {impactful and research-driven work|purple}.",
   ],
 };
@@ -83,7 +83,7 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     company: "Eightfold AI",
-    role: "Forward Deployed Engineer",
+    role: "Product Solutions Engineer",
     period: "Jun 2026 - Present",
     color: "blue",
     description:
