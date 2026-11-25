@@ -191,6 +191,16 @@ export const projects: ProjectItem[] = [
     achievement: "Built for the Bolna Symphony Buildathon",
   },
   {
+    name: "IntentGuard",
+    description:
+      "Built {execution policy for AI trading agents|purple} on Injective — {typed on-chain AuthZ|blue}, an isolated grantee signer, and {notional limits|orange} so agents can propose trades without holding keys or exceeding their mandate. Includes policy gateway, web setup flow, and {MCP/API|green} access; live on Injective testnet.",
+    tech: ["Next.js", "TypeScript", "Injective SDK", "AuthZ", "Cloud Run", "MCP"],
+    url: "https://injective-buildathon.vercel.app/",
+    period: "Nov 2026",
+    color: "purple",
+    achievement: "Built for the Injective buildathon",
+  },
+  {
     name: "WalGraph",
     description:
       "Built a scalable {decentralized graph database|blue} using {SUI blockchain|green} and {Walrus protocol|purple} for decentralized storage. Implemented {Cypher-like query engine|orange} and an interactive {D3.js interface|pink} for visualization, querying, and analytics.",
