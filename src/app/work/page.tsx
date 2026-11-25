@@ -95,13 +95,17 @@ export default function WorkPage() {
                         <span className={highlightColors[project.color]}>
                           {project.name}
                         </span>
-                        {project.github && (
+                        {(project.github || project.url) && (
                           <a
-                            href={project.github}
+                            href={project.github ?? project.url}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-1.5 sm:ml-2 inline-flex items-center text-foreground-muted hover:text-foreground transition-colors"
-                            aria-label={`${project.name} GitHub`}
+                            aria-label={
+                              project.github
+                                ? `${project.name} GitHub`
+                                : `${project.name} live demo`
+                            }
                           >
                             <ExternalLink className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                           </a>

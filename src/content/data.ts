@@ -25,7 +25,7 @@ export const profile = {
 
   // Short bio for the homepage - use {highlight} syntax for colored spans
   bio: [
-    "I build {intelligent systems|orange} at the intersection of AI research and software engineering. Currently working as a {Data Scientist|blue} at {IBM|blue}, focusing on automating large-scale data systems.",
+    "I build {intelligent systems|orange} at the intersection of AI research and software engineering. Currently working as a {Forward Deployed Engineer|blue} at {Eightfold AI|blue}, partnering with enterprise customers to deploy AI-powered talent solutions.",
     "I actively participate in {hackathons|pink} and enjoy rapid prototyping and problem-solving. Open to collaborating on {impactful and research-driven work|purple}.",
   ],
 };
@@ -82,9 +82,17 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
+    company: "Eightfold AI",
+    role: "Forward Deployed Engineer",
+    period: "Jun 2026 - Present",
+    color: "blue",
+    description:
+      "Work with enterprise customers to {deploy and integrate|blue} Eightfold's AI talent platform, translating business needs into {production-ready solutions|green} and driving successful adoption.",
+  },
+  {
     company: "IBM",
     role: "Data Scientist",
-    period: "Aug 2025 - Present",
+    period: "Aug 2025 - Jun 2026",
     color: "orange",
     description:
       "Part of the {data warehousing team|orange}, working on {automating the query translation process|blue} to enable seamless data access across different systems.",
@@ -165,12 +173,23 @@ export interface ProjectItem {
   description: string;
   tech: string[];
   github?: string;
+  url?: string;
   period: string;
   color: HighlightColor;
   achievement?: string;
 }
 
 export const projects: ProjectItem[] = [
+  {
+    name: "Jivana Connect",
+    description:
+      "Built a {voice-first clinic coordination platform|green} where the AI agent Jiya handles {appointment follow-ups|blue}, test reminders, and recovery check-ins. Captures {patient-reported concerns|pink} from multilingual calls and routes them to clinicians with {structured queues|orange}, timelines, and next actions in one workspace.",
+    tech: ["React", "TypeScript", "FastAPI", "MongoDB", "Bolna AI", "Firebase"],
+    url: "https://project-bf77a013-c0b3-413c-a75.web.app/",
+    period: "Oct 2026",
+    color: "green",
+    achievement: "Built for the Bolna Symphony Buildathon",
+  },
   {
     name: "WalGraph",
     description:
