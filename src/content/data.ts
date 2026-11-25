@@ -21,7 +21,7 @@ export const profile = {
     linkedin: "https://www.linkedin.com/in/violinadoley/",
   },
 
-  cv: "https://example.com/cv.pdf", // Add your CV/resume link here
+  cv: "/Violina_Doley_Resume.pdf",
 
   // Short bio for the homepage - use {highlight} syntax for colored spans
   bio: [
